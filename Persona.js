@@ -1,3 +1,4 @@
+
 export class Persona {
 
     nombre = "[no ingresado]";
@@ -13,6 +14,7 @@ export class Persona {
     }
 
     correr(){
+        
         return "el ñiato está corriendo..";
     }
 
@@ -25,5 +27,21 @@ export class Persona {
             return " - La Persona está viva";
         }
         return " - La Persona está muerta"
+    }
+}
+
+
+export class Alumno extends Persona {
+
+    matricula;
+    clase;
+    aula;
+
+    escribir(){
+        return "escribiendo";
+    }
+
+    estudiar(){
+        return "estudiando..."
     }
 }
