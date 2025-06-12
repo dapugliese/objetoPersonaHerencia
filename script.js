@@ -5,17 +5,17 @@ var parrafoPersona = document.getElementById("objetoPersona");
 
 var parrafoMetodoPersona = document.getElementById("metodoPersona");
 
-var miPersona = new Persona("carrizo");
+var miPersona = new Persona("Carrizo", "Juan Carlos");
 
 var miAlumno = new Alumno("Hernandez","Pedro");
 
 
 miAlumno.aula = "5 17"
 
-parrafoPersona.innerText = miPersona.apellido + ' '  + miPersona.nombre + ' ' + miPersona.aula;
+parrafoPersona.innerText = miAlumno.apellido + ' '  + miAlumno.nombre + ' ' ;
 
-parrafoMetodoPersona.innerText = miPersona.correr();
+parrafoMetodoPersona.innerText = miAlumno.correr();
 
 miPersona.morir();
-parrafoMetodoPersona.innerText += miPersona.mostrarEstado(); 
+parrafoMetodoPersona.innerText += miPersona.mostrarOcupacion();
 

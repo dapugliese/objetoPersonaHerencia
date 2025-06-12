@@ -28,6 +28,10 @@ export class Persona {
         }
         return " - La Persona está muerta"
     }
+
+    mostrarOcupacion(){
+        return "La persona está ocupada....";
+    }
 }
 
 
@@ -43,5 +47,9 @@ export class Alumno extends Persona {
 
     estudiar(){
         return "estudiando..."
+    }
+
+        mostrarOcupacion(){
+        return "El alumno está estudiando";
     }
 }
